@@ -3,7 +3,12 @@
 
 body {
     font-family: "IBM Plex Mono", sans-serif;
-    color: darkgray;
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+
+    color: rgb(187, 187, 187);
     background-color: black;
     cursor: url(http://www.rw-designer.com/cursor-extern.php?id=103706), auto;
     padding-left: 5px;
@@ -11,7 +16,8 @@ body {
 }
 
 ::selection {
-  background: #de2323;
+  background: #FF7C7C;
+  filter: blur(10px);
   color: #000;
 }
 
@@ -20,8 +26,6 @@ body {
 
 nav {
     font-size: 12;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
     padding: 10px;
     display: flex;
     flex-direction: row;
@@ -67,15 +71,17 @@ nav {
 }
 
 .nav_section:active {
-    font-style: italic;
+    /*font-style: italic;*/
     text-decoration: line-through;
     color:aliceblue;
 }
 
+/* ocultado pois o div de icones de contato tbm está
+
 .contact {
     display: flex;
     gap: 15px;
-}
+} */
 
 .contact_icon:hover {
     transform: scale(1.2);
@@ -117,10 +123,23 @@ h2 {
     font-weight: 200;
 }
 
+h4 {
+    font-size: 10px;
+    color: rgb(31, 31, 31);
+    border-bottom: 1px solid rgb(31, 31, 31);
+    margin: .5em 0;
+    text-align: right;
+}
+
 a {
-    color: #e81c4f;
-    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=146427), auto;
+    color: white;
+    text-decoration: none;
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=174259), auto;
   }
+
+a:hover{
+    font-style: italic;
+}
 
 /* CARDS PROJETOS */
 
@@ -133,7 +152,7 @@ a {
 .container_projects > .project {
     position: relative;
     width: 100%;
-    margin-bottom: 6px;
+    margin-bottom: 7px;
     break-inside: avoid;
     border-radius: 10px;
     border: 1.5px solid #161817;
@@ -161,6 +180,7 @@ a {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     padding-left: 15px; padding-right: 15px;
     bottom: 1;
 }
@@ -168,19 +188,32 @@ a {
 .project_title {
     display: flex;
     flex-direction: row;
+    align-items: baseline;
     gap: 10px;
 }
 
 .project_name {
     color: white;
     font-size: 13px;
+    width: 100%;
+    max-width: fit-content;
 }
 
 .project_caption,
 .project_date {
     color: white;
     opacity: 60%;
-    font-size: 13px;
+    font-size: 12px;
+}
+
+.project_caption {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.project_date {
+    margin-left: 10px;
 }
 
 @media (max-width: 1200px)
@@ -198,3 +231,68 @@ a {
     }
 
 }
+
+/*FOOTER AQUI*/
+
+#footer {
+    display: block;
+}
+
+/*não confundir esse "contact" com o contact bloqueado na nav pfv */
+.contact {
+    opacity: 70%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 30px;
+    margin: 0;
+    font-size: 10px;
+}
+
+.contact > p {
+    margin: 0;
+}
+
+.contact > p > a:hover {
+    margin: 0;
+    cursor: ne-resize;
+
+}
+
+.contact > h5 {
+    margin: 0;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+/*.contact > a {
+    margin: 0;
+    color: rgb(187, 187, 187);
+}
+
+.contact > a:hover {
+    margin: 0;
+    font-style: italic;
+    transition: 0.2s;
+    cursor: ne-resize;
+}*/
+
+.under_footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    color:#000;
+    font-size: 1em;
+}
+
+.last_image {
+    width: 50%;
+}
+
+/*isso é pra ver se funcionou*/

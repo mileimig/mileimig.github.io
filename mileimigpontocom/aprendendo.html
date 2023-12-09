@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Milena Leimig</title>
-    <link rel="icon" href="images/m preto fundo vermelho grosso.png">
+    <link rel="icon" href="images/m_icon_trans_more.gif">
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
   </head>
 
@@ -13,7 +13,7 @@
       <div class="navigation">
         <a class="nav_section" href="./aprendendo.html">🙿🙿</a>
         <a class="nav_section" href="./pageGraphic.html">Graphic design</a>
-        <a class="nav_section" href="./pageUIUX.html">UX & UI</a>
+        <a class="nav_section" href="./pageUIUX.html">Web design</a>
         <a class="nav_section" href="./page3D.html">3D</a>
         <a class="nav_section" href="./pageGallery.html">Gallery</a>
       </div>
@@ -89,7 +89,7 @@
       <article class="project">
         <div class="project_info">
           <div class="project_title">
-            <p class="project_name">Project name</p>
+            <p class="project_name">Scrapfile Project</p>
             <p class="project_caption">Legenda breve, pouco msm</p>
           </div>
           <p class="project_date">Date</p>
@@ -98,6 +98,43 @@
       </article>
 
     </div>
+
+    <h4>FOOTER</h4>
+    <div id="footer">
+      <div class="contact">
+        <h5 id="current_time">00:00:00</h5>
+        <!--<p>Loaded<p id="loaded_time">12:00:00</p></p>-->
+        <p>Work: <a href="mailto:milenaleimig@gmail.com" target="_blank">milenaleimig@gmail.com</a> 🡥  ·  Say hi! <a href="https://www.instagram.com/mi.leimig/" target="_blank">Instagram</a> 🡥</p>
+        <!--<a href="https://www.instagram.com/mi.leimig/" target="_blank">Instagram</a>
+        <a href="" target="_blank">Are.na</a>
+        <a href="https://www.behance.net/leimig" target="_blank">Behance</a>-->
+      </div>
+    </div>
+
+    <div class="under_footer">
+      <p>say to the silent earth: I flow.</p>
+      <img class="last_image" src="images/footer-image.gif">
+     <p>To the rushing water, speak: I am.</p> 
+    </div>
+
+  <script>
+
+    let time = document.getElementById("current_time");
+
+    setInterval(() =>{
+      let d = new Date();
+      time.innerHTML = d.toLocaleTimeString();
+    },1000)
+
+    /* ESSE NAO TA ROLANDO
+    
+    let time = document.getElementById("loaded_time");
+
+    let d = new Date();
+    time.innerHTML = d.toLocaleTimeString(); 
+    */
+
+  </script>
 
   </body>
 
