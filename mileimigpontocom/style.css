@@ -10,7 +10,7 @@
 
     color: rgb(187, 187, 187);
     background-color: black;
-    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=103706), auto;
+    cursor: crosshair; /* url(http://www.rw-designer.com/cursor-extern.php?id=103706), auto; */
     padding-left: 5px;
     padding-right: 5px;
 
@@ -27,7 +27,6 @@
 /* e se ela for no bottom?????? */
 
 nav {
-    font-size: 0.75rem;
     padding: 14px;
     display: flex;
     flex-direction: row;
@@ -60,38 +59,31 @@ nav {
     position: relative;
 }
 
-.about > .nav_section:hover {
-    cursor: help;
-}
-
 .nav_section {
     text-decoration: none;
     color: aliceblue;
     text-shadow: 0px 0px 15px #0008;
-    transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.3s;
+
+    opacity: 85%;
+
+    /* cursor: url(http://www.rw-designer.com/cursor-extern.php?id=174259), auto; */
 }
 
 .nav_section:hover {
     font-style: italic;
-    opacity: 80%;
+    opacity: 100%;
+}
+
+.about > .nav_section:hover {
+    cursor: help;
 }
 
 .nav_section:active {
     /*font-style: italic;*/
     text-decoration: line-through;
     color:aliceblue;
-}
-
-/* ocultado pois o div de icones de contato tbm está
-
-.contact {
-    display: flex;
-    gap: 15px;
-} */
-
-.contact_icon:hover {
-    transform: scale(1.2);
-    transition: ease-in-out 0.2s;
+    opacity: 100%;
 }
 
 .blurrybg {
@@ -122,49 +114,37 @@ nav {
     break-inside: avoid
 }
 
-.header_about > p {
-    font-size: 0.75rem;
-    color: rgb(202, 202, 202);
-}
-
-.header_about > h5 {
-    font-size: 0.65rem;
-    font-weight: 400;
-    color: rgb(128, 128, 128);
-}
-
-h1,
-h2,
-strong {
-  color: aliceblue;
-}
-
-h1 {
-    font-size: 4rem;
-    font-weight: 100;
-}
-
-h2 {
-    font-size: 18px;
-    font-weight: 200;
-}
-
 h4 {
-    font-size: 10px;
-    color: rgb(31, 31, 31);
+    font-size: 0.65rem;
+    color: rgb(43, 43, 43);
     border-bottom: 1px solid rgb(31, 31, 31);
     margin: .5em 0;
     text-align: right;
 }
 
+h5 {
+    font-size: 0.65rem;
+    font-weight: 400;
+    margin: 0;
+    color: rgb(128, 128, 128);
+}
+
+p {
+    font-size: 0.75rem;
+    color: rgb(202, 202, 202);
+}
+
 a {
     color: white;
     text-decoration: none;
-    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=174259), auto;
   }
 
 a:hover{
     font-style: italic;
+}
+
+.new_page_link {
+    cursor: ne-resize;
 }
 
 /* GRID PROJECTS */
@@ -175,7 +155,11 @@ a:hover{
     column-gap: 10px;
 }
 
-.container_grid_projects > .grid_project {
+.container_grid_projects > a {
+    font-style: normal;
+}
+
+.container_grid_projects > a > .grid_project {
     position: relative;
     width: 100%;
     margin-bottom: 7px;
@@ -183,20 +167,19 @@ a:hover{
     border-radius: 12px;
     border: 1.5px solid #161817;
     transition: all 0.3s;
-    cursor: pointer;
 
     /* -webkit-filter: grayscale(100%);
     filter: grayscale(100%); */
 }
 
-.container_grid_projects > .grid_project:hover {
+.container_grid_projects > a > .grid_project:hover {
     opacity: 90%;
 
     /* -webkit-filter: none;
     filter: none; */
 }
 
-.container_grid_projects > .grid_project > img {
+.container_grid_projects > a > .grid_project > img {
     max-width: 100%;
     border-radius: 10px;
     position: relative;
@@ -367,7 +350,6 @@ a:hover{
     display: block;
 }
 
-/*não confundir esse "contact" com o contact bloqueado na nav pfv */
 .contact {
     opacity: 70%;
     width: 100%;
@@ -377,22 +359,22 @@ a:hover{
     justify-content: space-between;
     gap: 30px;
     margin: 0;
-    font-size: 0.60rem;
-}
-
-.contact > h5 {
-    margin: 0;
-    font-size: 0.60rem;
-    font-weight: 300;
 }
 
 .footer_contact {
     display: flex;
     align-items: center;
     gap: 0.3rem;
+    margin: 0;
 }
 
-.footer_contact > p {
+.footer_contact > h5 {
+    color: rgb(161, 161, 161);
+    font-size: 0.60rem;
+}
+
+.footer_contact > a {
+    font-size: 0.65rem;
     margin: 0;
 }
 
@@ -404,18 +386,6 @@ a:hover{
 .link_arrow {
     transform: rotate(-45deg);
 }
-
-/*.contact > a {
-    margin: 0;
-    color: rgb(187, 187, 187);
-}
-
-.contact > a:hover {
-    margin: 0;
-    font-style: italic;
-    transition: 0.2s;
-    cursor: ne-resize;
-}*/
 
 .under_footer {
     display: flex;
@@ -432,5 +402,3 @@ a:hover{
 .last_image {
     width: 50%;
 }
-
-/*isso é pra ver se funcionou*/
