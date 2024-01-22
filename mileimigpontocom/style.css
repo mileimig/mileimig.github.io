@@ -34,6 +34,8 @@ nav {
     gap: 10%;
     position: fixed; top: 0; left: 0; right: 0;
     z-index: 2;
+
+    mix-blend-mode: exclusion;
     /*margin: 10px;
     border-top: solid aliceblue 1px;
     border-bottom: solid aliceblue 1px;*/
@@ -84,6 +86,14 @@ nav {
     text-decoration: line-through;
     color:aliceblue;
     opacity: 100%;
+}
+
+.nav_line {
+    height: 100%;
+    width: 1px;
+    background-color: transparent; 
+    border-left: 2px dotted aliceblue; 
+    opacity: 30%;
 }
 
 .blurrybg {
@@ -174,6 +184,7 @@ a:hover{
 
 .container_grid_projects > a > .grid_project:hover {
     opacity: 90%;
+    transform: translate(0, -3px);
 
     /* -webkit-filter: none;
     filter: none; */
