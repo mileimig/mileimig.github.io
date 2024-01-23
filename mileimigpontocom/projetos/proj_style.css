@@ -235,6 +235,11 @@ nav {
     .sequence_SPACED {
         min-width: 100%;
 }
+
+    .project_header {
+        margin-left: 14px;
+        margin-right: 14px;
+    }
 }
 
 .project_details {
