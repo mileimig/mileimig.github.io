@@ -247,14 +247,9 @@ a:hover{
     column-gap: 10px;
 }
 
-.container_grid_projects:hover .grid_project {
+.project_notfocus {
     opacity: .7;
     filter: blur(3px) grayscale(100%);
-}
-
-.container_grid_projects .grid_project:hover {
-    opacity: 1;
-    filter: blur(0px) grayscale(0%);
 }
 
 .container_grid_projects > a {
