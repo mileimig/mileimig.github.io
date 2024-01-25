@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,13 @@
     <link rel="icon" href="images/m_icon_trans_more.gif">
     <link href="style.css" rel="stylesheet" type="text/css" media="all">
     <script defer src="app.js"></script>
+
   </head>
 
   <body>
 
     <nav>
-      <div class="about">
+      <div class="navigation">
         <!-- nao acho que eu precise disso <a class="nav_section" href="./aprendendo.html">🙿🙿</a> -->
         <a class="nav_section" href="./pagePROJECTS.html">[ Projects ]</a>
         <div class="nav_line"></div>
@@ -48,14 +50,15 @@
 
       <div class="header_about">
         <h5>Interests</h5>
-        <p>Morphology of letterforms, symmetry and patterning, ornamentation, engraving, digital and analog printed matter, archiving, memory, locality & territory</p>
+        <p>Morphology of letterforms, symmetry and patterning, ornamentation, engraving, digital and analog printed matter, visual research, archiving, memory, locality & territory</p>
       </div>
 
     </div>
 
 <!-- "GRID" PROJECTS SECTION 1 -->
-
-    <!--<h4 class="input_projects">Projects</h4>-->
+    <div class="marquee">
+      <p>This website is still under construction!</p>
+    </div>
 
     <div class="container_grid_projects">
 
@@ -100,16 +103,16 @@
         </article>
       </a>
 
-      <a href="projetos/banco_de_belem.html">
+      <a href="projetos/dcm.html">
         <article class="grid_project">
           <div class="grid_project_info">
             <div class="grid_project_title">
-              <p class="project_name">Banco de Belém</p>
-              <p class="project_caption">Furniture Design</p>
+              <p class="project_name">Don't Call Me</p>
+              <p class="project_caption">3D Art</p>
             </div>
-            <p class="project_date">2022</p>
+            <p class="project_date">2021</p>
           </div>
-          <img class="project_cover" src="images/capas de projeto/capa banco de belem logo 3.png">
+          <img class="project_cover" src="images/capas de projeto/capa dcm corte 3.png">
         </article>
       </a>
 
@@ -201,16 +204,16 @@
         </article>
       </a>
 
-      <a href="projetos/dcm.html">
+      <a href="projetos/banco_de_belem.html">
         <article class="grid_project">
           <div class="grid_project_info">
             <div class="grid_project_title">
-              <p class="project_name">Don't Call Me</p>
-              <p class="project_caption">3D Art</p>
+              <p class="project_name">Banco de Belém</p>
+              <p class="project_caption">Furniture Design</p>
             </div>
-            <p class="project_date">2021</p>
+            <p class="project_date">2022</p>
           </div>
-          <img class="project_cover" src="images/capas de projeto/capa dcm corte 3.png">
+          <img class="project_cover" src="images/capas de projeto/capa banco de belem logo 3.png">
         </article>
       </a>
 
@@ -422,18 +425,14 @@
     </div>
 
 -->
-
   <script>
-
     let time = document.getElementById("current_time");
 
     setInterval(() =>{
       let d = new Date();
       time.innerHTML = d.toLocaleTimeString();
     },1000)
-
   </script>
-
   </body>
 
 </html>
