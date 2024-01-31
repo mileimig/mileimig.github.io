@@ -38,7 +38,7 @@ nav {
 
     mix-blend-mode: exclusion;
 
-    text-transform: lowercase;
+    /*text-transform: lowercase;*/
 
     /*margin: 10px;
     border-top: solid aliceblue 1px;
@@ -451,6 +451,7 @@ a:hover{
 
 #footer {
     display: block;
+    padding: 14px 14px 5px 14px;
 }
 
 .contact {
