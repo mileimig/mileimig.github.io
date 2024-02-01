@@ -37,6 +37,19 @@
     z-index: 2;
   }
 
+  .ticker-wrap-bottom {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding-top: 4px;
+    border-bottom: solid rgb(95, 95, 95) 1px;
+    border-top: solid rgb(95, 95, 95) 1px;
+
+    z-index: 2;
+  }
+
   .ticker {
     display: inline-block;
     margin-bottom: 5px;
@@ -547,12 +560,20 @@ a:hover{
     margin: 0 auto;
     padding-top: 75px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 75px;
+}
+.thats_all > p {
+    margin: 0;
 }
 
 #footer {
     display: block;
-    margin-top: 75px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .contact {
