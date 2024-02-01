@@ -44,7 +44,6 @@
     white-space: nowrap;
     position: relative;
     padding-top: 4px;
-    border-bottom: solid rgb(95, 95, 95) 1px;
     border-top: solid rgb(95, 95, 95) 1px;
 
     z-index: 2;
