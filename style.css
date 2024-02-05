@@ -575,7 +575,7 @@ a:hover{
     margin-bottom: 5px;
 }
 
-.contact {
+.footer_container {
     opacity: 70%;
     width: 100%;
     display: flex;
@@ -586,24 +586,29 @@ a:hover{
     margin: 0;
 }
 
-.footer_contact {
+.left {
+    display: inline-flex;
+    gap: 20px;
+}
+
+.footer_info {
     display: flex;
     align-items: center;
     gap: 0.3rem;
     margin: 0;
 }
 
-.footer_contact > h5 {
+.footer_info > h5 {
     color: rgb(161, 161, 161);
     font-size: 0.60rem;
 }
 
-.footer_contact > a {
+.footer_info > a {
     font-size: 0.65rem;
     margin: 0;
 }
 
-.footer_contact > a:hover {
+.footer_info > a:hover {
     margin: 0;
     cursor: ne-resize;
 }

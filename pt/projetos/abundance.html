@@ -1,0 +1,132 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abundance | Milena Leimig</title>
+
+  <link rel="icon" href="project images/spinny_fauv.gif">
+  <link href="proj_style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+
+  <nav>
+    <div class="back_button">
+      <a class="index_link" href="../índice.html">
+        <svg width="18px" height="18px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" color="currentColor">
+          <path d="M10.25 4.75l-3.5 3.5 3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round"></path>
+          <path d="M6.75 8.25h6a4 4 0 014 4v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+        Índice
+      </a>
+    </div>
+<!--<div class="about">
+      <a class="nav_section" href="./pageBio">Bio</a>
+      <div class="nav_line"></div>
+      <a class="nav_section" href="./pageBio">Contact</a>
+    </div>-->
+  </nav>
+  <div class="blurrybg"></div>
+
+  <!--O PROJETO-->
+  <div class="main">
+
+    <div class="project_header">
+
+      <div class="name_and_date">
+
+        <div class="name_with_image">
+          <h1>Abundance</h1>
+          <a href="https://book-of-thoth.net/Three-of-Cups-Abundance" target="_blank"><img class="smaller"
+              src="project images/abundance 4.jpg"></a>
+        </div>
+
+        <div class="date">
+          <h2>2021</h2>
+        </div>
+
+      </div>
+
+      <h1 class="colon_dissapear">:</h1>
+
+      <div class="project_details">
+        <p>Uma ilustração 3D inspirada pelo três de copas do <em>Tarot de Thoth</em>. <br>
+          Feita com <em>Blender</em> e renderizada em <em>Eevee</em>.
+        </p>
+        <p class="tags">3D, Ilustração</p>
+      </div>
+
+    </div>
+
+    <div class="presentation">
+
+      <style>
+        div>img {
+          object-fit: cover;
+        }
+      </style>
+
+      <article class="sequence">
+        <img src="project images/abundance 2.png" loading="lazy"/>
+        <div class="grid">
+          <video autoplay muted loop src="project images/abundance 1.mp4"></video>
+          <img src="project images/abundance 3.3.png"  loading="lazy"/>
+        </div>
+      </article>
+      <img src="project images/abundance 4.2.png"  loading="lazy"/>
+    </div>
+
+  </div>
+
+  <!-- FOOTERS -->
+
+  <div id="footer">
+    <div class="contact">
+      <h5 id="current_time">00:00:00</h5>
+      <div class="footer_contact">
+        <h5>Trabalhos:</h5>
+        <a href="mailto:milenaleimig@gmail.com" target="_blank">milenaleimig@gmail.com</a>
+        <svg class="link_arrow" data-arrow="" width="16px" height="16px" stroke-width="1.5" viewBox="0 0 24 24"
+          fill="none" color="currentColor">
+          <path d="M6 12h12.5m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+        <h5> · </h5>
+        <h5>Diga oi!</h5>
+        <a href="https://www.instagram.com/mi.leimig/" target="_blank">Instagram</a>
+        <svg class="link_arrow" data-arrow="" width="16px" height="16px" stroke-width="1.5" viewBox="0 0 24 24"
+          fill="none" color="currentColor">
+          <path d="M6 12h12.5m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ON HOLD
+
+    <div class="under_footer">
+      <p>say to the silent earth: I flow.</p>
+      <img class="last_image" src="images/footer-image.gif" loading="lazy">
+     <p>To the rushing water, speak: I am.</p> 
+    </div>
+
+-->
+
+  <script>
+
+    let time = document.getElementById("current_time");
+
+    setInterval(() => {
+      let d = new Date();
+      time.innerHTML = d.toLocaleTimeString();
+    }, 1000)
+
+  </script>
+
+</body>
+
+</html>

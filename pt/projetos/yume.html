@@ -1,0 +1,171 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YUME Alarm | Milena Leimig</title>
+
+  <link rel="icon" href="project images/spinny_fauv.gif">
+  <link href="proj_style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+
+  <nav>
+    <div class="back_button">
+      <a class="index_link" href="../índice.html">
+        <svg width="18px" height="18px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" color="currentColor">
+          <path d="M10.25 4.75l-3.5 3.5 3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round"></path>
+          <path d="M6.75 8.25h6a4 4 0 014 4v7" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+        Índice
+      </a>
+    </div>
+<!--<div class="about">
+      <a class="nav_section" href="./pageBio">Bio</a>
+      <div class="nav_line"></div>
+      <a class="nav_section" href="./pageBio">Contact</a>
+    </div>-->
+  </nav>
+  <div class="blurrybg"></div>
+
+  <!--O PROJETO-->
+  <div class="main">
+
+    <div class="project_header">
+
+      <style>
+        .project_header {
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          gap: 10px;
+
+          top: 30%;
+
+          left: 0;
+          right: 0;
+          margin-left: 12.5%;
+          margin-right: 12.5%;
+          position: fixed;
+          z-index: -1;
+        }
+
+        @media (max-width: 1200px) {
+            .project_header {
+              top: 27%;
+            }
+          }
+
+          @media (max-width: 900px) {
+            .project_header {
+              top: 18%;
+            }
+          }
+      </style>
+
+      <div class="name_and_date">
+
+        <h1>Yume Alarm</h1>
+
+        <div class="date">
+          <h2>2021</h2>
+        </div>
+
+      </div>
+
+      <h1 class="colon_dissapear">:</h1>
+
+      <div class="project_details">
+        <p><em>YUME</em> é o projeto de um sistema ubíquo de regulação e monitoramento da rotina do sono, feito a partir do desejo de ajudar as pessoas a regular seu sono e facilitar o processo de acordar.
+          <br><br>
+          O produto é composto por um alarme-lanterna com interface física de controle, um aplicativo para configuração e personalização do alarme e uma esteira com sensores para monitoramento de vibrações durante o sono.
+        </p>
+        <p class="tags">Design de Produto, Design de Interação (UI e UX), 3D, Pesquisa de Diagnóstico, Benchmarking</p>
+        <div class="credits">
+          <h2>designers</h2>
+          <h2>:</h2>
+          <p>Camila Espíndola<br>Julia Alcântara<br>Maria Izabel Assumpção<br>Maria Luisa Menge<br>Milena
+            Leimig<br>Pedro Villela</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- <style>
+        .presentation { max-width: 80%; margin: 0 auto; border-radius: 10px; }
+       </style> -->
+    <div class="presentation">
+      <style>
+        .smaller_image_topradius {
+          border-radius: 10px 10px 0 0;
+          max-width: 75%;
+          margin: 0 auto;
+        }
+
+        .smaller_image_bottomradius {
+          border-radius: 0 0 10px 10px;
+          max-width: 75%;
+          margin: 0 auto;
+        }
+      </style>
+      <img class="smaller_image_topradius" src="project images/yume 1.png" loading="lazy" />
+      <img class="smaller_image" src="project images/yume 2.png" loading="lazy" />
+      <img class="smaller_image" src="project images/yume 3.png" loading="lazy" />
+      <img class="smaller_image" src="project images/yume 4.png" loading="lazy" />
+      <img class="smaller_image_bottomradius" src="project images/yume 5.png" loading="lazy" />
+    </div>
+
+  </div>
+
+  <!-- FOOTERS -->
+
+  <div id="footer">
+    <div class="contact">
+      <h5 id="current_time">00:00:00</h5>
+      <div class="footer_contact">
+        <h5>Trabalhos:</h5>
+        <a href="mailto:milenaleimig@gmail.com" target="_blank">milenaleimig@gmail.com</a>
+        <svg class="link_arrow" data-arrow="" width="16px" height="16px" stroke-width="1.5" viewBox="0 0 24 24"
+          fill="none" color="currentColor">
+          <path d="M6 12h12.5m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+        <h5> · </h5>
+        <h5>Diga oi!</h5>
+        <a href="https://www.instagram.com/mi.leimig/" target="_blank">Instagram</a>
+        <svg class="link_arrow" data-arrow="" width="16px" height="16px" stroke-width="1.5" viewBox="0 0 24 24"
+          fill="none" color="currentColor">
+          <path d="M6 12h12.5m0 0l-6-6m6 6l-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <!-- ON HOLD
+
+    <div class="under_footer">
+      <p>say to the silent earth: I flow.</p>
+      <img class="last_image" src="images/footer-image.gif" loading="lazy">
+     <p>To the rushing water, speak: I am.</p> 
+    </div>
+
+-->
+
+  <script>
+
+    let time = document.getElementById("current_time");
+
+    setInterval(() => {
+      let d = new Date();
+      time.innerHTML = d.toLocaleTimeString();
+    }, 1000)
+
+  </script>
+
+</body>
+
+</html>
