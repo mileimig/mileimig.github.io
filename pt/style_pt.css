@@ -374,16 +374,11 @@ a:hover{
     border: 1.5px solid #161817;
     transition: all 0.3s;
 
-    /* -webkit-filter: grayscale(100%);
-    filter: grayscale(100%); */
+    min-height: 200px;
 }
 
 .container_grid_projects > a > .grid_project:hover {
-    /*opacity: 90%;*/
     transform: translate(0, -3px);
-
-    /* -webkit-filter: none;
-    filter: none; */
 }
 
 .container_grid_projects > a > .grid_project > img {
