@@ -194,11 +194,12 @@ nav {
     gap: 10px;
 }
 
-.spin {
+.asteristico {
     animation-name: spin;
     animation-duration: 5000ms;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    display: inline-block;
 }
 
 @keyframes spin {
@@ -375,7 +376,7 @@ a:hover{
     border: 1.5px solid #161817;
     transition: all 0.3s;
 
-    min-height: 200px;
+    /*min-height: 200px;*/
 }
 
 .container_grid_projects > a > .grid_project:hover {
@@ -383,7 +384,7 @@ a:hover{
 }
 
 .container_grid_projects > a > .grid_project > img {
-    max-width: 100%;
+    width: 100%;
     border-radius: 10px;
     position: relative;
     z-index: -1;
