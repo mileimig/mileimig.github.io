@@ -20,7 +20,7 @@
 }
 
 ::selection {
-  background: #FF7C7C;
+  background: #919191;
   filter: blur(10px);
   color: #000;
 }
@@ -188,10 +188,49 @@ nav {
 /* HEADER PROVISORIO */
 
 .beta_header {
-    margin-top: 65vh;
+    margin-top: 5vh;
     margin-bottom: 2.5rem;
+    /*display: flex;
+    gap: 10px;*/
+}
+
+.header_desenhos {
     display: flex;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 5vh;
+}
+
+.container_transiçao {
+    position: relative;
+    width: 33.33%;
+    overflow: hidden;
+}
+
+.desenho {
+    opacity: 25%;
+}
+
+.container_transiçao img {
+    width: 100%;
+    transition: all linear 0.5s;
+}
+
+img.hoverdesenho {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.container_transiçao:hover img {
+    opacity: 0;
+    cursor: help;
+}
+
+.container_transiçao:hover img.hoverdesenho {
+    opacity: 1;
 }
 
 .asteristico {
@@ -251,7 +290,7 @@ nav {
 
 .header_about {
     margin-right: 10px;
-    padding-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
     padding-top: 5px;
     break-inside: avoid;
     border-top: solid rgba(255, 255, 255, 0.2) 1px
