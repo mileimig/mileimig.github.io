@@ -482,7 +482,7 @@ a:hover{
     transform: translate(0, -3px);
 }
 
-.container_grid_projects > a > .grid_project > img {
+.container_grid_projects > a > .grid_project > img,video {
     width: 100%;
     border-radius: 10px;
     position: relative;
@@ -658,6 +658,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     align-items: center;
     gap: 5px;
     color: rgba(255, 255, 255, 0.2);
