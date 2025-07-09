@@ -215,24 +215,24 @@ nav {
 
 .container_transiçao img {
     width: 100%;
-    transition: all linear 0.5s;
+    transition: mask-position 75ms;
 }
 
 img.hoverdesenho {
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0;
-}
-
-.container_transiçao:hover img {
-    opacity: 0;
-    cursor: help;
-}
-
-.container_transiçao:hover img.hoverdesenho {
-    opacity: 1;
-}
+    mask-image: url(images/elipse.svg);
+    mask-position: 0 0;
+    mask-size: 0px;
+    mask-repeat: no-repeat;
+    filter: invert(30%);
+    pointer-events: none;
+    opacity: 0; /* começa invisível */
+    transition:
+      mask-size 0.3s ease,
+      opacity 0.3s ease; /* transição suave */
+  }
 
 h1 {
     text-wrap: balance;

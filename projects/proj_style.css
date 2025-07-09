@@ -259,6 +259,7 @@ nav {
     .sequence,
     .smaller_image_SPACED_radius,
     .smaller_image_SPACED_bottomradius,
+    .smaller_image_bottomradius_SPACED,
     .sequence_SPACED {
         min-width: 100%;
 }
